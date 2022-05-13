@@ -88,7 +88,7 @@ $ git clone git@github.com:Jeremy-Polanco/Country-quiz.git
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```
 
 ## Acknowledgements
