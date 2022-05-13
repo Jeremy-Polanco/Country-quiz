@@ -54,6 +54,7 @@ const Wrapper = styled.main`
 
   .position-center {
     display: flex;
+    margin: 2rem 0;
   }
 
   .btn-container {
