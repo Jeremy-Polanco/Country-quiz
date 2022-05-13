@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://country-quiz-react-app.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/4iAPNmLu3QON8d6KBDfh">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,32 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://i.postimg.cc/z3mBCsjh/image.png)
+![screenshot](https://i.postimg.cc/pLJfdCWC/image.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  It's deployed in netlify and the link is at the top of this file.
+  
 - What was your experience?
+  This app is pretty good to get practice with new technologies, in my case I tried for the first time redux.
+
 - What have you learned/improved?
-- Your wisdom? :)
+  I've learned how to use redux toolkit, and I've improved my tidiness regarding my files and folder management.
+   
+- Your wisdom? 
+  This app is very flexible so there're a couple of ways to acheive the same result so is very good for practice.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [React routerre](https://reactrouter.com/docs/en/v6)
+- [styled components](https://styled-components.com/)
+- [redux toolkit](https://redux-toolkit.js.org/)
+- [vite](https://vitejs.dev/guide/#trying-vite-online)
 
 ## Features
 
@@ -60,15 +70,20 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8) was to build an application to complete the given user stories.
 
-## How To Use
+- [x] I can see at least 2 types of questions: a city is the capital of.. or a flag belong to country.
+- [x] I can see select an answer
+- [x] I can see if my answer is correct or incorrect
+- [x] When I answer correctly, I can move on to the next question
+- [x] When I answer incorrectly, I can see my results and try again
+- [x] I can try again
 
-<!-- Example: -->
+## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone git@github.com:Jeremy-Polanco/Country-quiz.git
 
 # Install dependencies
 $ npm install
@@ -81,12 +96,10 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Redux Toolkit Tutorial](https://www.youtube.com/watch?v=VlN-v5VWIYI)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@Jeremy-Polanco](https://github.com/Jeremy-Polanco)
+
