@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import resultsLogo from "../images/undraw_winners_ao2o 2.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { getQuestion, tryAgain } from "../features/questionSlice";
 import { Link } from "react-router-dom";
@@ -7,17 +8,9 @@ import { getAll } from "../utils/helpers";
 
 const ResultsCard = () => {
   const dispatch = useDispatch();
-  const {
-    currentQuestion,
-    countriesAndCapitals,
-    flag,
-    capital,
-    country,
-    waiting,
-    answers,
-    selectedAnswer,
-    correctAnswers,
-  } = useSelector((store) => store.questions);
+  const { countriesAndCapitals, correctAnswers } = useSelector(
+    (store) => store.questions
+  );
 
   const capitals = getAll(countriesAndCapitals, "capital");
   const flags = getAll(countriesAndCapitals, "flags");
@@ -25,11 +18,7 @@ const ResultsCard = () => {
 
   return (
     <Wrapper>
-      <img
-        src="src\images\undraw_winners_ao2o 2.svg"
-        alt="quiz results"
-        className="img"
-      />
+      <img src={resultsLogo} alt="quiz results" className="img" />
       <h1 className="title">Results</h1>
       <p className="results">
         You got <span className="correct-amount">{correctAnswers}</span> correct

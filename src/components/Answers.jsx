@@ -6,16 +6,9 @@ import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
 
 const Answers = () => {
   const dispatch = useDispatch();
-  const {
-    currentQuestion,
-    countriesAndCapitals,
-    flag,
-    capital,
-    country,
-    waiting,
-    answers,
-    selectedAnswer,
-  } = useSelector((store) => store.questions);
+  const { country, waiting, answers, selectedAnswer } = useSelector(
+    (store) => store.questions
+  );
 
   return (
     <>

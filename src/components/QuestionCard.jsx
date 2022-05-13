@@ -4,7 +4,7 @@ import { getQuestion } from "../features/questionSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
 import { getAll } from "../utils/helpers";
-// import { flags, capitals, countries } from "../features/questionSlice";
+import quizLogo from "../images/undraw_adventure_4hum 1.svg";
 import { Answers } from "./index";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,6 @@ const QuestionCard = () => {
     capital,
     country,
     waiting,
-    incorrectAnswers,
     selectedAnswer,
   } = useSelector((store) => store.questions);
 
@@ -31,11 +30,7 @@ const QuestionCard = () => {
 
   return (
     <Wrapper>
-      <img
-        src="src\images\undraw_adventure_4hum 1.svg"
-        alt="quiz draw"
-        className="img"
-      />
+      <img src={quizLogo} alt="quiz draw" className="img" />
       <section className="section">
         {capital ? (
           <h3 className="question">{`${capital} ${currentQuestion}`}</h3>
@@ -46,22 +41,22 @@ const QuestionCard = () => {
           </>
         )}
         <Answers />
-        {waiting && selectedAnswer !== country ? (
+        {waiting && (
           <div className="btn-right">
-            <Link to="/results" className="btn">
-              next
-            </Link>
-          </div>
-        ) : (
-          <div className="btn-right">
-            <button
-              className="btn"
-              onClick={() => {
-                dispatch(getQuestion([capitals, flags, countries]));
-              }}
-            >
-              next
-            </button>
+            {selectedAnswer !== country ? (
+              <Link to="/results" className="btn">
+                next
+              </Link>
+            ) : (
+              <button
+                className="btn"
+                onClick={() => {
+                  dispatch(getQuestion([capitals, flags, countries]));
+                }}
+              >
+                next
+              </button>
+            )}
           </div>
         )}
       </section>

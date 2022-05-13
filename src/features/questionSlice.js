@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
 import axios from "axios";
-import { getAll } from "../utils/helpers";
 const url = "https://restcountries.com/v3.1";
 
 const initialState = {

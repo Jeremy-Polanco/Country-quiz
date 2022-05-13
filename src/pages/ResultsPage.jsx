@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Footer, Header, ResultsCard } from "../components";
-import { FaRegCheckCircle, FaRegTimesCircle } from "react-icons/fa";
 
 const ResultsPage = () => {
   return (
