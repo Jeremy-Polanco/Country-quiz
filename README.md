@@ -58,7 +58,7 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [React router(https://reactrouter.com/docs/en/v6)
+- [React router](https://reactrouter.com/docs/en/v6)
 - [styled components](https://styled-components.com/)
 - [redux toolkit](https://redux-toolkit.js.org/)
 - [vite](https://vitejs.dev/guide/#trying-vite-online)
